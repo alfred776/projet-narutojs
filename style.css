@@ -1,0 +1,126 @@
+*{
+    
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-size: 10px;
+}
+
+body{
+    background-image: url("image/naruto-sasuke.jpg") ;
+    color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+
+.block{
+    display: flex;
+    
+}
+.rond{
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(255, 98, 0);
+    width: 200px;
+    height: 200px;
+    margin-left: 400px;
+    margin-top: 200px;
+    border-radius: 50%;
+    border-bottom-left-radius: 1px;
+    transition: all 2s ease-in-out;
+    animation: infiniteRotation 1s infinite linear;
+    filter: blur(10px);
+}
+
+@keyframes infiniteRotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rond:hover{
+    background-color: black;
+
+}
+.rond-2{align-items: center;
+    justify-content: center;
+    background-color:rgb(124, 12, 144);
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 200px;
+    border-radius: 50%;
+    border-top-right-radius: 1px;
+    transition: all 2s ease-in-out;
+    animation: infiniteRotation 1s infinite linear;
+    filter: blur(10px);
+
+}
+.rond-2:hover{
+    background-color: red;
+    transform: rotate(405deg);
+}
+
+
+.liste{
+    display: flex;
+    
+
+}
+.e-1{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(255, 68, 0, 0.383);
+    list-style-type: none;
+    padding-top: 80px;
+    padding-left: 400px;
+    font-family: 'Julee';
+   font-family: 'Noto Sans', sans-serif;
+    color: white;
+  text-shadow: 2px 2px 4px red;
+  transition: 1s;
+  margin-top: -500px;
+     
+}
+
+
+header{
+    position: absolute;
+    display: flex;
+    z-index: 10px;
+}
+.lettre{
+   color: antiquewhite;
+   font-size: 50px;
+   animation: flash 1.2s linear infinite;
+   padding-left: 180px;
+   
+}
+@keyframes flash {
+    0%{
+        color: red;
+        text-shadow: 0 0 10px red;
+    }
+    80%{
+        color: violet;
+        text-shadow: none;
+    }
+    100%{
+        color: antiquewhite;
+        text-shadow: 0 0 10px antiquewhite;
+    }
+}
+
+audio{
+    margin-left: 510px;
+    width: 300px;
+    margin-top: -290px;
+}
+  
